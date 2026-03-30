@@ -168,28 +168,6 @@ Aligned with audit and enforcement practice:
 
 ---
 
-## Production infrastructure
-
-```
-complywith.eu (Infomaniak DNS)
-       ↓
-Cloud Run (europe-west1, 2GB RAM)
-       ↓
-   startup.py → downloads ChromaDB from Cloud Storage
-       ↓
-   Streamlit app
-       ↓
-Cloud SQL PostgreSQL ←→ Supabase Auth
-       ↓
-Secret Manager
-```
-
-Monthly infrastructure cost: ~€20 (Cloud SQL ~$9, Cloud Run ~$5-10 depending on traffic).
-Cost per full assessment including AI investigations: ~€0.03.
-Gross margin at scale: ~98%.
-
----
-
 ## Status
 
 | Component | Status |
